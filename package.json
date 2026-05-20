@@ -8,7 +8,8 @@
     "server": "nodemon server.js",
     "frontend": "cd frontend && node node_modules/vite/bin/vite.js",
     "install-all": "npm install && npm install --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run frontend\""
+    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
+    "vercel-build": "cd frontend && npm install && npm run build"
   },
   "dependencies": {
     "cors": "^2.8.5",
